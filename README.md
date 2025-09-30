@@ -1,7 +1,7 @@
 # Smart India Hackathon Workshop
-# Date:
-## Register Number:
-## Name:
+# Date:30:09:2025
+## Register Number:25013581
+## Name:pooja v
 ## Problem Title
 SIH 25010: Smart Crop Advisory System for Small and Marginal Farmers
 ## Problem Description
@@ -41,28 +41,63 @@ Government of Punjab
 Agriculture, FoodTech & Rural Development
 
 ## Proposed Solution
-<h3>Remove These Lines</h3>
-<ul><li>Detailed explanation of the proposed solution</li>
-<li>How it addresses the problem</li>
-<li>Innovation and uniqueness of the solution</li></ul>
+A Smart Crop Advisory System that provides personalized, timely, and low-cost advisories to small and marginal farmers through:
+1. App + SMS + IVR (local language, offline support).
+2. Rule-based + AI engine for irrigation, fertilizer, and pest alerts.
+3. Weather, soil & satellite data integration for accurate decisions.
+4. Market price & government scheme updates for better income opportunities.
 
 ## Technical Approach
-<h3>Remove These Lines</h3>
-<ul><li>Technologies to be used (e.g. programming languages, frameworks, hardware)
-</li>
-<li>Methodology and process for implementation <b>(Flow Charts/Images/ working prototype)</b></li></ul>
+1. Data Collection
+      > Weather APIs, soil/sensor data (optional), satellite imagery, crop history.
+2. Advisory Engine
+      > Rule-based system → basic agronomy recommendations.
+      > AI/ML models → irrigation scheduling, pest/disease detection, yield prediction.
+3. Data Processing & Storage.
+      > Backend with FastAPI + PostgreSQL/PostGIS.
+      > IoT data via MQTT; satellite & weather in centralized DB.
+4. User Access
+      > Android App (offline support, local language, voice).
+      > SMS/IVR for feature phone users.
+      > Web Dashboard for agricultural officers.
+5. Deployment
+      > Cloud hosting with APIs + lightweight offline caching.
+      > Scalable microservices for advisories.
+      > <img width="524" height="328" alt="SIH" src="https://github.com/user-attachments/assets/76fc6cb2-0281-4cca-8acc-b99f3a327085" />
+
 
 ## Feasibility and Viability
-<h3>Remove These Lines</h3>
-<ul><li>Analysis of the feasibility of the idea</li>
-<li>Potential challenges and risks</li>
-<li>Strategies for overcoming these challenges</li></ul>
+Feasibility
+      > Technical: Uses existing weather APIs, open satellite data, and low-cost IoT sensors → easy to implement.
+      > Operational: Works on feature phones (SMS/IVR) as well as smartphones → accessible to all farmers.
+      > Scalable: Cloud + modular design → can expand from one village to entire states.
+      > Affordable: Minimal cost per farmer (shared sensors, free satellite data).
+Viability
+      > Economic: Reduces crop losses, saves water/fertilizer, improves yield → direct farmer benefit.
+      > Social: Local language + voice support → inclusive for low-literacy farmers.
+      > Sustainability: Integrates with government schemes and agri-markets for long-term adoption.
+      > Impact: Higher income, better decision-making, and improved food security.
 
 ## Impact and Benefits
-<h3>Remove These Lines</h3>
-<ul><li>Potential impact on the target audience</li>
-<li>Benefits of the solution (social, economic, environmental, etc.)</li></ul>
+1. Increased Productivity – Farmers get timely advice on irrigation, fertilizer, and pest control → better crop yields.
+2. Cost Savings – Optimized use of water, fertilizer, and pesticides reduces expenses.
+3. Market Advantage – Real-time mandi prices & scheme updates help farmers earn more.
+4. Accessibility – Works via App, SMS, and IVR in local languages → even low-literacy farmers benefit.
+5. Sustainability – Encourages efficient resource use, climate-smart farming, and long-term food security.
 
 ## Research and References
-<h3>Remove These Lines</h3>
-<ul><li>Details / Links of the reference and research work</li></ul>
+1. Crop Advisory Systems
+      > FAO e-agriculture case studies on digital advisory tools for smallholder farmers.
+      > “Digital Green” initiative in India for video-based advisory.
+2. Weather & Remote Sensing
+      > Indian Meteorological Department (IMD) – Weather APIs & agro-meteorological services.
+      > ISRO Bhuvan & Sentinel-2 satellite data for NDVI & crop monitoring.
+3. Agriculture & AI
+      > ICAR research on crop disease management and decision support systems.
+      > Microsoft AI Sowing App (Andhra Pradesh pilot) – 30% yield increase with data-driven advisories.
+4. Government Schemes & Market Data
+      > eNAM (National Agricultural Market) for mandi prices.
+      > PM-Kisan & Kisan Call Centres for farmer outreach.
+5. Related Studies
+      > Research papers on “AI in Precision Agriculture” (Springer, IEEE Xplore).
+      > Case studies of mKrishi (TCS) and Kisan Suvidha app by Govt. of India.
